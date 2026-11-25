@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dapur Sore — Rush Hour Kitchen</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #2b2118; height: 100%; }
+  body { display: flex; align-items: center; justify-content: center; min-height: 100vh; }
+  #wrap { width: min(96vw, 960px); }
+  canvas { display: block; width: 100%; height: auto; image-rendering: auto;
+    border-radius: 10px; box-shadow: 0 12px 40px rgba(0,0,0,.5); background: #f6e7c8; }
+  #help { color: #e8d5ae; font: 13px/1.5 "Trebuchet MS", Verdana, sans-serif;
+    text-align: center; margin: 10px 0 0; }
+  #help b { color: #ffd94d; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="960" height="640"></canvas>
+  <p id="help"><b>WASD / arrows</b> move &nbsp;·&nbsp; <b>E</b> use station &nbsp;·&nbsp; hold <b>E</b> to chop
+    &nbsp;·&nbsp; <b>Q</b> take food back &nbsp;·&nbsp; <b>1–7</b> grab from the pantry &nbsp;·&nbsp; click works too</p>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
